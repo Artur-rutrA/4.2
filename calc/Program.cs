@@ -12,8 +12,12 @@ namespace calc
             int B = int.Parse(Console.ReadLine());
             Console.WriteLine("Выберите действие: \n1) +\n2) -\n3) *\n4) /");
             int vari = int.Parse(Console.ReadLine());
+
             switch (vari)
-            {
+            { 
+                case 3:
+                    multy(A, B);
+                    break;
                 case 4:
                     devide(A, B);
                     break;
@@ -23,7 +27,12 @@ namespace calc
             {
                 double _1 = (double)a;
                 double _2 = (double)b;
-                Console.WriteLine(_1 / _2);
+                Console.WriteLine(_1 / _2);        
+            }
+
+            void multy(int a, int b)
+            {
+                Console.WriteLine(a * b);
             }
 
         }
