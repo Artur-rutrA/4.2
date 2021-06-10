@@ -14,7 +14,10 @@ namespace calc
             int vari = int.Parse(Console.ReadLine());
 
             switch (vari)
-            { 
+            {
+                case 2:
+                    minus(A, B);
+                    break;
                 case 3:
                     multy(A, B);
                     break;
@@ -32,7 +35,12 @@ namespace calc
 
             void multy(int a, int b)
             {
-                Console.WriteLine(a * b);
+                Console.WriteLine(a * b);         
+            }
+
+            void minus(int a, int b)
+            {
+                Console.WriteLine(a - b);
             }
 
         }
