@@ -15,6 +15,9 @@ namespace calc
 
             switch (vari)
             {
+                case 1:
+                    pluss(A, B);
+                    break;
                 case 2:
                     minus(A, B);
                     break;
@@ -41,6 +44,11 @@ namespace calc
             void minus(int a, int b)
             {
                 Console.WriteLine(a - b);
+            }
+
+            void pluss(int a, int b)
+            {
+                Console.WriteLine(a + b);
             }
 
         }
